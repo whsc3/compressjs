@@ -1,6 +1,25 @@
-define(['./lib/freeze','./lib/BitStream','./lib/Stream','./lib/BWT','./lib/Context1Model','./lib/DefSumModel','./lib/FenwickModel','./lib/MTFModel','./lib/NoModel','./lib/Huffman','./lib/RangeCoder','./lib/BWTC','./lib/Bzip2','./lib/Dmc','./lib/Lzjb','./lib/LzjbR','./lib/Lzp3','./lib/PPM','./lib/Simple'], function(freeze,BitStream,Stream,BWT,Context1Model,DefSumModel,FenwickModel,MTFModel,NoModel,Huffman,RangeCoder,BWTC,Bzip2,Dmc,Lzjb,LzjbR,Lzp3,PPM,Simple) {
-    'use strict';
-    return freeze({
+define(function(require, exports, module){
+  'use strict';
+  var freeze = require('./lib/freeze');
+  var BitStream = require('./lib/BitStream');
+  var Stream = require('./lib/Stream');
+  var BWT = require('./lib/BWT');
+  var Context1Model = require('./lib/Context1Model');
+  var DefSumModel = require('./lib/DefSumModel');
+  var FenwickModel = require('./lib/FenwickModel');
+  var MTFModel = require('./lib/MTFModel');
+  var NoModel = require('./lib/NoModel');
+  var Huffman = require('./lib/Huffman');
+  var RangeCoder = require('./lib/RangeCoder');
+  var BWTC = require('./lib/BWTC');
+  var Bzip2 = require('./lib/Bzip2');
+  var Dmc = require('./lib/Dmc');
+  var Lzjb = require('./lib/Lzjb');
+  var LzjbR = require('./lib/LzjbR');
+  var Lzp3 = require('./lib/Lzp3');
+  var PPM = require('./lib/PPM');
+  var Simple = require('./lib/Simple');
+        module.exports = freeze({
         version: "0.0.1",
         // APIs
         BitStream: BitStream,
